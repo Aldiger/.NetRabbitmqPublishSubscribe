@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/NetRabbitMQ/.vs/ProjectEvaluation
+/NetRabbitMQ/.vs/NetRabbitMQ
+/NetRabbitMQ/Producer/bin/Debug/net8.0
+/NetRabbitMQ/Producer/obj
+/NetRabbitMQ/Subscriber/bin/Debug/net8.0
+/NetRabbitMQ/Subscriber/obj
+/NetRabbitMQ/Tests/bin/Debug/net8.0
+/NetRabbitMQ/Tests/obj
+/NetRabbitMQ/Producer/Producer.csproj.user
