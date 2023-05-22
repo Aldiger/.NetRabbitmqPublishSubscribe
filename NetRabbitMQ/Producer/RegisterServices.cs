@@ -8,9 +8,9 @@ namespace Producer
         {
             services.AddDbContext<OrderDbContext>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString("OrderDbContext"));
+                //options.UseSqlServer();
+                options.UseInMemoryDatabase(configuration.GetConnectionString("OrderDbContext"));
             });
-
             services.AddScoped<IOrderRespository, OrderRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 

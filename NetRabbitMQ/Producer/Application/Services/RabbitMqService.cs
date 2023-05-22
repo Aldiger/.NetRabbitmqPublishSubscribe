@@ -13,8 +13,8 @@ namespace Producer
                 HostName = "localhost"
             };
 
-            var connection = factory.CreateConnection();
-            using var channel = connection.CreateModel();
+            using var connection = factory.CreateConnection();
+            var channel = connection.CreateModel();
 
             channel.QueueDeclare("orders", exclusive: false);
 

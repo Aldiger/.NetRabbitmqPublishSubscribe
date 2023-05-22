@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 //add services
 builder.Services.RegisterServices(builder.Configuration);
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IRabbitMqService, RabbitMqService>();
 
 // Add services to the container.
 builder.Services.AddControllers();
